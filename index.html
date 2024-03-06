@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video with Subtitles</title>
+  </head>
+  <style>
+    ::cue {
+    color: blue;
+    font-size: 25px;
+    }
+</style>
+  <body>
+    <video width="auto" height="auto" controls>
+      <source
+        src="movie.mp4"
+        type="video/mp4"
+      />
+      <track
+        src="japanese_transcript.vtt"
+        kind="subtitles"
+        srclang="ja"
+        label="Japanese"
+        default
+      />
+      Your browser does not support the video tag.
+    </video>
+  </body>
+</html>
